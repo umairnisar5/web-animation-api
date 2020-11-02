@@ -8,15 +8,17 @@
 
     <style>
         #box {
-            height: 100px;
-            width: 100px;
+            height: 200px;
+            width: 400px;
             background-color: aquamarine;
         }
     </style>
 </head>
 
 <body>
-    <div id="box"> </div>
+    <div id="box"> 
+        <h2>warning</h2>
+    </div>
 
 
     <script>
@@ -25,11 +27,10 @@
 
 
         elem.animate([
-            { transform: 'translate(0, 0)', background: 'darkblue'  },
-            { transform: 'translate(400px, 0)' , background: 'black' },
-            { transform: 'translate(400px, 400px)' , background: 'brown' },
-            { transform: 'translate(0, 400px)', background: 'red'  },
-            { transform: 'translate(0, 0)', background: 'darkblue'  },
+         {transform : 'scale(0.5)' , background: "white"},
+         {transform : 'scale(1)', background: "red" },
+         {transform : 'scale(0.5)', background: "white"},
+
 
 
         ], {
