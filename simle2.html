@@ -7,16 +7,26 @@
     <title>Document</title>
 
     <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+
+
         #box {
             height: 200px;
             width: 400px;
             background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
         }
     </style>
 </head>
 
 <body>
-    <div id="box"> 
+    <div id="box">
         <h2>warning</h2>
     </div>
 
@@ -27,16 +37,16 @@
 
 
         elem.animate([
-         {transform : 'scale(0.5)' , background: "white"},
-         {transform : 'scale(1)', background: "red" },
-         {transform : 'scale(0.5)', background: "white"},
+            { transform: 'scale(0.5)', background: "white", color: "white" },
+            { transform: 'scale(1)', background: "red", color: "white" },
+            { transform: 'scale(0.5)', background: "white", color: "white" },
 
 
 
         ], {
             duration: 4000,
-            iterations : Infinity
-            
+            iterations: Infinity
+
         })
     </script>
 </body>
